@@ -66,7 +66,9 @@ export default {
     required: [
       'company',
       'name'
-    ]
+    ],
+
+    indexes: ['createdAt']
   },
 
   filters: {
