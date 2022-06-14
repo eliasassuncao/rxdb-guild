@@ -1,3 +1,26 @@
 <template>
-  <div>users</div>
+  <qas-list-view v-model:fields="fields" v-model:results="results" :entity="entity" :use-filter="false">
+    <template #default>
+      <qas-table-generator :fields="fields" :results="results" />
+    </template>
+  </qas-list-view>
 </template>
+
+<script>
+export default {
+  name: 'UsersList',
+
+  data () {
+    return {
+      fields: {},
+      results: []
+    }
+  },
+
+  computed: {
+    entity () {
+      return 'users'
+    }
+  }
+}
+</script>
