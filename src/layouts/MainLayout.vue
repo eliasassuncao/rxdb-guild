@@ -5,6 +5,11 @@
 <script>
 const menuList = [
   {
+    label: 'Inicio',
+    icon: 'o_home',
+    to: { name: 'DashboardPage' }
+  },
+  {
     label: 'Usuários',
     icon: 'o_person',
     to: { name: 'UsersList' }
