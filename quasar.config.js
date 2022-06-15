@@ -86,7 +86,8 @@ module.exports = configure(function (quasar) {
           // 'asteroid-components': path.resolve(__dirname, '../ui/src/components'),
           // 'asteroid-plugins': path.resolve(__dirname, '../ui/src/plugins'),
           // examples: path.resolve(__dirname, 'src/examples'),
-          uuid: path.resolve(__dirname, './node_modules/uuid/dist/index.js')
+          uuid: path.resolve(__dirname, './node_modules/uuid/dist/index.js'),
+          mixins: path.resolve(__dirname, './src/mixins')
         })
 
         // YAML

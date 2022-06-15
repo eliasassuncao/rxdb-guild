@@ -27,6 +27,8 @@ const vuexOffline = new VuexOffline({
         pull: true
       },
       options: {
+        retry: true,
+        live: true,
         fetch: (url, options) => {
           options.headers.set('Authorization', `Bearer ${token}`)
 
